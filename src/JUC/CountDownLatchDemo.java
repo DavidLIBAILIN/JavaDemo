@@ -1,5 +1,7 @@
 package JUC;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 public class CountDownLatchDemo {
@@ -14,6 +16,13 @@ public class CountDownLatchDemo {
         }
         countDownLatch.await();
         System.out.println("Close Door");
+
+        List<Integer> list = new ArrayList<>();
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.forEach(i);
 
     }
 }
