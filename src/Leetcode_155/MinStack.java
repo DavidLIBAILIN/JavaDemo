@@ -27,7 +27,6 @@ public class MinStack {
         stack.push(minNode);
     }
 
-
     public void pop() {
         if (!stack.isEmpty()) {
             stack.pop();
@@ -48,7 +47,6 @@ public class MinStack {
         if (stack.isEmpty()) return -1;
         else return stack.peek().min;
     }
-
 }
 
 /**
