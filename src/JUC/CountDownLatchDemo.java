@@ -22,7 +22,6 @@ public class CountDownLatchDemo {
         list.add(3);
         list.add(4);
         list.add(5);
-        list.forEach(i);
 
     }
 }
