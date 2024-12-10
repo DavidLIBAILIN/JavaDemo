@@ -26,7 +26,6 @@ public class LongestIncreasingSubsequence {
             }
         }
         return ans.size();
-        System.arraycopy();
     }
 
 

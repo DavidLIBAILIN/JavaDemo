@@ -19,5 +19,6 @@ public class Pattern132 {
                 j = stack.pop();
             }
         }
+        return true;
     }
 }
