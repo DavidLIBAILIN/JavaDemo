@@ -10,21 +10,21 @@ public class ConvertDoublyLinkedListtoArray1 {
         System.out.println(list.toString());
         System.out.println(Arrays.toString(list.toArray(Integer[]::new)));
 
-        private void remove(Node node) {
-            if (node.next != null) {
-                node.next.prev = node.prev;
-            }
-            if (node.prev != null) {
-                node.prev.next = node.next;
-            }
-            if (node == head) {
-                head = node.next;
-            }
-            if (node == tail) {
-                tail = node.prev;
-            }
-            node.prev = null;
-            node.next = null;
-        }
+//        private void remove(Node node) {
+//            if (node.next != null) {
+//                node.next.prev = node.prev;
+//            }
+//            if (node.prev != null) {
+//                node.prev.next = node.next;
+//            }
+//            if (node == head) {
+//                head = node.next;
+//            }
+//            if (node == tail) {
+//                tail = node.prev;
+//            }
+//            node.prev = null;
+//            node.next = null;
+//        }
     }
 }
