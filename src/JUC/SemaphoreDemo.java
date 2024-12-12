@@ -9,8 +9,6 @@ public class SemaphoreDemo {
 
         for (int i = 1; i <= 6; i++) {
             new Thread(() -> {
-
-
                 try {
                     semaphore.acquire();
                     System.out.println(Thread.currentThread().getName() + " Got the spot");
