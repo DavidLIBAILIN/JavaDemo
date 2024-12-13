@@ -1,5 +1,6 @@
 package CIBCInterview;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,6 +23,7 @@ public class StreamDemo {
 
         memberNames.stream().filter(p).map(String::toLowerCase).toList();
         List<Integer> list = new ArrayList<Integer>();
+        BigDecimal
         for(int i = 1; i< 10; i++){
             list.add(i);
         }
