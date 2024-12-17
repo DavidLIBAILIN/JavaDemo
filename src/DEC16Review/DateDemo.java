@@ -13,6 +13,7 @@ public class DateDemo {
         Function<Integer, Integer> squared = value -> value * value;
         String s = "David";
         list.stream().mapToInt(Integer::intValue).toArray();
+        list.stream().fil
         List<Integer> squaredNumbers = list.stream().map(squared).toList();
         System.out.println(squaredNumbers);
         Long[] longArr = {1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L};
