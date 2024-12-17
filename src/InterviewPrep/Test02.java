@@ -1,10 +1,7 @@
-package CIBCInterview;
+package InterviewPrep;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.IntStream;
 
 public class Test02 {
     public static void main(String[] args) {
@@ -15,6 +12,8 @@ public class Test02 {
         String s2 = "hello";
         Person p = new Person("David", 28);
         Person p1 = new Person("David", 28);
+        System.out.println(p1);
+
         System.out.println(p.equals(p1));
         System.out.println(p.hashCode());
         System.out.println(p1.hashCode());

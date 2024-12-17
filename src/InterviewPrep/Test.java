@@ -1,4 +1,4 @@
-package CIBCInterview;
+package InterviewPrep;
 
 
 import java.util.*;
