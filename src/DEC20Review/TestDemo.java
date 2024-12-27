@@ -15,7 +15,9 @@ class Demo {
 }
 public class TestDemo {
     public static void main(String[] args) {
+
         int[] arr = {1,2,3};
+
         String[] strArr = {"a", "b", "c"};
         Demo demo = new Demo("David", 28);
         List<Integer> arrList = new ArrayList<>();
