@@ -1,16 +1,9 @@
-class Solution {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String result = solution.reverseString("Test");
-        System.out.println(result);
-    }
+import java.util.Arrays;
 
-    private String reverseString(String string) {
-        char[] charArray = string.toCharArray();
-        StringBuffer sb = new StringBuffer();
-        for (int i = string.length() - 1; i >= 0; i--) {
-            sb.append("Str".toCharArray());
-        }
-        return sb.toString();
+class Solution2 {
+    public static void main(String[] args) {
+       int[] arr = {-1,0,1,2,-1,-4};
+        System.out.println(arr[0] + ", " + arr[-1]);
+
     }
 }
