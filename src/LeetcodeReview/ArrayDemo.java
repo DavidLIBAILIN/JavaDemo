@@ -1,23 +1,42 @@
-package LeetcodeReview;
+class Foo {
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+    private Boolean first = false;
+    private Boolean second = false;
 
-public class ArrayDemo {
-    public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(4);
-        list.add(2);
-        list.add(3);
+    public Foo() {
 
-        int[] c = {10,3,4,2};
-        Arrays.sort(c);
-        System.out.println(Arrays.toString(c));
+    }
 
-        System.out.println(list.toString());
-        list.sort(Integer::compareTo);
-        System.out.println(list.toString());
+    public void first(Runnable printFirst) throws InterruptedException {
+
+        // printFirst.run() outputs "first". Do not change or remove this line.
+        synchronized(this){
+            printFirst.run();
+            first = true;
+            notifyAll();
+        }
+    }
+
+    public void second(Runnable printSecond) throws InterruptedException {
+        synchronized(this){
+            if(!first){
+                wait();
+            }
+            // printSecond.run() outputs "second". Do not change or remove this line.
+            printSecond.run();
+            second = true;
+            notifyAll();
+        }
+    }
+
+    public void third(Runnable printThird) throws InterruptedException {
+
+        // printThird.run() outputs "third". Do not change or remove this line.
+        synchronized(this){
+            while(!second){
+                wait();
+            }
+            printThird.run();
+        }
     }
 }

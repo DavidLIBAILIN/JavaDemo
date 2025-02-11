@@ -1,10 +1,16 @@
 package Leetcode_9;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class IsPalindrome {
     public static void main(String[] args) {
         IsPalindrome ip = new IsPalindrome();
         int x = 121;
         System.out.println(ip.isPalindrome(x));
+        List<Integer> list = List.of(1,2,3,4);
+        System.out.println(list.toString());
     }
 
     private boolean isPalindrome(int x) {

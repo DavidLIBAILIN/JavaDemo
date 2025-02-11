@@ -2,8 +2,16 @@ import java.util.Arrays;
 
 class Solution2 {
     public static void main(String[] args) {
-       int[] arr = {-1,0,1,2,-1,-4};
-        System.out.println(arr[0] + ", " + arr[-1]);
+        Integer i = 32;
+        System.out.println(Integer.BYTES);
+        System.out.println(Integer.TYPE);
+        System.out.println(Integer.SIZE);
+        StringBuilder sb = new StringBuilder();
+        sb.append("abc");
+        System.out.println(sb.length());
+        System.out.println(sb.reverse().toString());
+
 
     }
+
 }
